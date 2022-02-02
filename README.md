@@ -11,10 +11,8 @@ Download pretrained model: [FDTmodel](https://pan.baidu.com/s/1fTM66ZzcCQjPGg1_2
 Download testing datasets and put them into `test_dataset` directory. If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit.git) to set test_dataset.
 
        python test.py 
-
-	  --dataset UAV10fps                 #dataset_name
-	
-	  --snapshot snapshot/FDTmodel.pth  # tracker_name
+	    --dataset UAV10fps                 #dataset_name
+	    --snapshot snapshot/FDTmodel.pth  # tracker_name
 	
 The testing result will be saved in the `results/dataset_name/tracker_name` directory.
 ## 3. Train
