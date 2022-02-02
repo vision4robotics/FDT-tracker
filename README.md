@@ -4,7 +4,7 @@
 ### 1. Environment setup
 This code has been tested on Ubuntu 18.04, Python 3.8.3, Pytorch 0.7.0/1.6.0, CUDA 10.2. Please install related libraries before running this code:
 
-`pip install -r requirements.txt`
+      pip install -r requirements.txt
 ### 2. Test
 Download pretrained model: [FDTmodel](https://pan.baidu.com/s/1fTM66ZzcCQjPGg1_2-bDiA)(code:r0fy) and put it into `tools/snapshot` directory.
 
@@ -24,8 +24,8 @@ Download the datasets
 
 To train the FDT model, run `train.py` with the desired configs:
 
-`cd tools
-python train.py`
+       cd tools
+       python train.py
 
 ### 4. Evaluation
 We provide the tracking [results](https://pan.baidu.com/s/1PoKNWFKJ40Loeu_E1GJuPQ)(code: 35rw) of UAV123@10fps, DTB70, UAVTrack112_L, and UAV123. If you want to evaluate the tracker, please put those results into `results` directory.
