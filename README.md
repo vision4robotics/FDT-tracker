@@ -29,3 +29,8 @@ python train.py`
 
 ## 4. Evaluation
 We provide the tracking [results](https://pan.baidu.com/s/1PoKNWFKJ40Loeu_E1GJuPQ)(code: 35rw) of UAV123@10fps, DTB70, UAVTrack112_L, and UAV123. If you want to evaluate the tracker, please put those results into `results` directory.
+
+`python eval.py 	                          \
+	--tracker_path ./results          \ # result path
+	--dataset UAV123                  \ # dataset_name
+	--tracker_prefix 'FDTmodel'   # tracker_name`
