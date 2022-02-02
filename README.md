@@ -34,3 +34,9 @@ We provide the tracking [results](https://pan.baidu.com/s/1PoKNWFKJ40Loeu_E1GJuP
 	         --tracker_path ./results          \ # result path
 	         --dataset UAV123                  \ # dataset_name
 	         --tracker_prefix 'FDTmodel'   # tracker_name
+## 5. Contact
+If you have any questions, please contact me.
+
+Haobo Zuo
+
+Email: <1951684@tongji.edu.cn>
