@@ -18,7 +18,15 @@ The testing result will be saved in the `results/dataset_name/tracker_name` dire
 ### 3. Train
 #### Prepare training datasets
 
-Download the datasets
+Download the datasets:
+
+[VID](https://image-net.org/challenges/LSVRC/2017/)
+ 
+[COCO](https://cocodataset.org/#home)
+
+[GOT-10K](http://got-10k.aitestunion.com/downloads)
+
+[LaSOT](http://vision.cs.stonybrook.edu/~lasot/)
 
 #### Train a model
 
