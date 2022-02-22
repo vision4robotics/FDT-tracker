@@ -8,7 +8,7 @@ import torch as t
 import torch.nn as nn
 import torch.nn.functional as F
 from pysot.core.config import cfg
-from pysot.models.loss import select_cross_entropy_loss, weight_l1_loss,l1loss,IOULoss,DISCLE
+from pysot.models.loss import select_cross_entropy_loss, weight_l1_loss,l1loss,IOULoss
 from pysot.models.backbone.alexnet import AlexNet
 from pysot.models.utile.utile import hiftmodule
 import numpy as np
@@ -116,9 +116,7 @@ class ModelBuilder(nn.Module):
         pre_bbox=self.getcentercuda(loc) 
         bbo=self.getcentercuda(labelxff) 
         
-        loc_loss1=self.IOULoss(pre_bbox,bbo,weightxff)
-        loc_loss2=DISCLE(pre_bbox,bbo,weightxff)
-        loc_loss=cfg.TRAIN.w2*loc_loss1+cfg.TRAIN.w3*loc_loss2
+        loc_loss=self.IOULoss(pre_bbox,bbo,weightxff)
        
         cls_loss=cfg.TRAIN.w4*cls_loss1+cfg.TRAIN.w5*cls_loss2
  
@@ -129,7 +127,6 @@ class ModelBuilder(nn.Module):
             cfg.TRAIN.LOC_WEIGHT*loc_loss\
                 +cfg.TRAIN.CLS_WEIGHT*cls_loss
         outputs['cls_loss'] = cls_loss
-        outputs['loc_loss1'] = loc_loss1
-        outputs['loc_loss2'] = loc_loss2
+        outputs['loc_loss'] = loc_loss
 
         return outputs
