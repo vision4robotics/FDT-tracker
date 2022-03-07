@@ -50,6 +50,6 @@ Haobo Zuo
 Email: <1951684@tongji.edu.cn>
 ## Demo Videos
 We provide [demo videos](https://youtu.be/X-Js1hNL5JY) to further learn about FDT tracker's performance.
-![video](https://youtu.be/X-Js1hNL5JY)
+![Watch the video](https://youtu.be/X-Js1hNL5JY)
 ## Acknowledgement
 The code is implemented based on [pysot](https://github.com/STVIR/pysot.git). We would like to express our sincere thanks to the contributors.
