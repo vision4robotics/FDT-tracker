@@ -1,5 +1,12 @@
 # Feature-Distilled Transformer for UAV Tracking
 ### Changhong Fu, Haobo Zuo, Guangze Zheng, Junjie Ye, and Bowen Li
+## Abstract
+Occlusion, fast motion, and illumination variation
+are prone to cause object feature pollution, which lead to crucial problems for visual tracking, especially from unmanned aerial vehicle (UAV) perspectives in the intelligent transportation field. The key reason is that most trackers directly exploit search patch features for location estimation without considering if they are contaminated. To address this issue, this work proposes an efficient and effective feature-distilled Transformer (FDT) for aerial tracking, which can alleviate feature
+pollution by purifying search features with uncontaminated temporal information. FDT consists
+of two primary parts, a feature encoder to enhance internal attention of feature maps and a distillation decoder guided by the purifying strategy. Specifically, the distillation decoder fully exploits temporal information about feature pollution from the last frame, thereby efficiently guiding the distillation of feature maps. Consequently, pure features of the object are accurately reserved to improve the tracking performance in challenging UAV scenarios. Exhaustive experiments on four authoritative UAV tracking benchmarks have validated that FDT achieves the state-of-the-art performance, especially on sequences with severe feature pollution. In addition, FDT has strongly proved its practicability with 32.7 frames per second in the real-world tests on an aerial platform.
+
+![Workflow of our tracker](https://github.com/vision4robotics/FDT-/blob/main/images/workflow.jpg)
 ## About Code
 ### 1. Environment setup
 This code has been tested on Ubuntu 18.04, Python 3.8.3, Pytorch 0.7.0/1.6.0, CUDA 10.2. Please install related libraries before running this code:
